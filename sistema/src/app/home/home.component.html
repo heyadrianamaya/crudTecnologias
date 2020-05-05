@@ -1,0 +1,24 @@
+<table class="table">
+  <thead class="thead-dark">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Apellido Paterno</th>
+    <th scope="col">Apellido Materno</th>
+    <th scope="col">Apodo</th>
+    <th scope="col"></th>
+    <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let persona of personas">
+    <th scope="row">{{persona.id}}</th>
+    <td>{{persona.nombre}}</td>
+    <td>{{persona.apellidoP}}</td>
+    <td>{{persona.apellidoM}}</td>
+    <td>{{persona.apodo}}</td>
+    <td style="width: 3px"><a class="btn btn-primary btn-sm" routerLink="/actualizar/{{persona.slug}}">Ver/Editar</a> </td>
+    <td style="width: 3px"><a class="btn btn-primary btn-sm btn-danger" (click)="eliminar(persona.slug)" >Elimnar</a> </td>
+  </tr>
+  </tbody>
+</table>

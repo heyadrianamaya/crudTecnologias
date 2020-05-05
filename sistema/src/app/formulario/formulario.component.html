@@ -1,0 +1,19 @@
+<div>
+  <div class="form-group">
+    <label for="nombre">Nombre:</label>
+    <input [(ngModel)]="persona.nombre" type="text" class="form-control" id="nombre" placeholder="Ingresar nombre">
+  </div>
+  <div class="form-group">
+    <label for="apellidoP">Apellido Paterno:</label>
+    <input [(ngModel)]="persona.apellidoP" type="text" class="form-control" id="apellidoP" placeholder="Ingresar apellido paterno">
+  </div>
+  <div class="form-group">
+    <label for="apellidoM">Apellido Materno:</label>
+    <input [(ngModel)]="persona.apellidoM" type="text" class="form-control" id="apellidoM" placeholder="Ingresar apellido materno">
+  </div>
+  <div class="form-group">
+    <label for="apodo">Apodo:</label>
+    <input [(ngModel)]="persona.apodo" type="text" class="form-control" id="apodo" placeholder="Ingresar apodo">
+  </div>
+  <button (click)="registrar()" class="btn btn-primary">Registrar</button>
+</div>

@@ -1,0 +1,7 @@
+{
+  "/personas/*": {
+    "target": "http://api.test",
+    "secure": false,
+    "changeOrigin": true
+  }
+}
